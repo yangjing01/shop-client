@@ -12,7 +12,7 @@
 <!--                <span class="header_login_text">登录|注册</span>-->
 <!--            </a>-->
 <!--        </header>-->
-        <HeaderTop title="河南家宏福科技园(367省道北)">
+        <HeaderTop :title="address.name">
             <a class="header_search" slot="left">
                 <i class="iconfont icon-sousuo"></i>
             </a>

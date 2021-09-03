@@ -2,7 +2,7 @@
     <section class="loginContainer">
         <div class="loginInner">
             <div class="login_header">
-                <h2 class="login_logo">硅谷外卖</h2>
+                <h2 class="login_logo">xx外卖</h2>
                 <div class="login_header_title">
                     <a href="javascript:;" :class="{on: loginWay}" @click="loginWay=true">短信登录</a>
                     <a href="javascript:;" :class="{on: !loginWay}" @click="loginWay=false">密码登录</a>
@@ -51,7 +51,7 @@
                 <a href="javascript:;" class="about_us">关于我们</a>
             </div>
             <a href="javascript:" class="go_back" @click="$router.back()">
-                <i class="iconfont icon-jiantou2"></i>
+                <i class="iconfont icon-jiantou1"></i>
             </a>
         </div>
 
@@ -220,6 +220,7 @@
                         color #333
                         font-size 14px
                         padding-bottom 4px
+                        text-decoration none
                         &:first-child
                             margin-right 40px
                         &.on
@@ -327,11 +328,12 @@
                     color #999
             .go_back
                 position absolute
-                top 5px
-                left 5px
+                top 10px
+                left 10px
                 width 30px
                 height 30px
+                text-decoration none
                 >.iconfont
-                    font-size 20px
+                    font-size 25px
                     color #999
 </style>

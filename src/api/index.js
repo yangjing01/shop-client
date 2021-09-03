@@ -1,13 +1,15 @@
 //与后台交互模块
 import ajax from './ajax'
+//const BASE_URL = "http://localhost:4000"
+const BASE_URL = '/api'
 /**
  * 获取地址信息(根据经纬度串)
  */
-export const reqAddress = (geohash) => ajax('/api/position/' + geohash)
+export const reqAddress = (geohash) => ajax('${BASE_URL}/api/position/' + geohash)
 /**
  * 获取 msite 页面食品分类列表
  */
-export const reqCategorys = () => ajax('/api/index_category')
+export const reqCategorys = () => ajax('${BASE_URL}/api/index_category')
 /**
  * 获取 msite 商铺列表(根据经纬度)
  */
@@ -16,6 +18,7 @@ export const reqShops = ({latitude, longitude}) => ajax('/api/shops', {latitude,
 /**
  * 账号密码登录
  */
+
 export const reqPwdLogin = (name, pwd, captcha) => ajax('/api/login_pwd', {
     name,
     pwd,
