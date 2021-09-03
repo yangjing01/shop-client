@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2769504_rzutvmkzgu.css">
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <script src="//at.alicdn.com/t/font_2702996_bz5oxmo22td.js"></script>
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+  <script>
+    //解决点击响应延时0.3s
+    if('addEventListener' in document){
+      document.addEventListener('DOMContentLoaded',function(){
+        FastClick.attach(document.body);
+      },false);
+    }
+    if(!window.Promise){
+      document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise"></srcipt>')
+    }
+  </script>
+</head>
+  <body>
+
+    <div id="app"></div>
+
+  </body>
+</html>
